@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakah - Digital School and Canteen Platform</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/e11528b410.js" crossorigin="anonymous"></script>
+
+
+    <!-- <script src="script.js" defer></script> -->
+</head>
+<body>
+
+
+    <!-- navbar section -->
+    <header id="header">
+        <section>
+            <div class="container">
+                <nav>
+                   
+                     <!-- icon -->
+                      <div class="logo-info">
+                        
+                         <img class="logo" src="images/logo-fakha.png" alt="">
+                          <h1><span>Fa</span>kha</h1>
+                      </div>
+                     
+                    <ul id="sidemenu">
+                 <li><a data-en="About Fakah" data-ar="عن فكه" href="#herder">About Fakah</a></li>
+
+                 <li><a  data-en="For Schools" data-ar="للمدارس" href="#about">Solutions for Schools</a></li>
+
+
+                 <li><a data-en="For Parents" data-ar="للآباء" href="#services">Solutions for Parents</a></li>
+
+
+                 <li><a data-en="For Canteens" data-ar="للمقاصف" href="#portfolio">Solutions for Canteens</a></li>
+
+                 <li><a data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة" href="#contact">FAQs</a></li>
+                
+                 
+                
+                 <i class="fa-regular fa-circle-xmark fas" onclick="colsemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+                              <!-- Language Switcher -->
+
+                    <div class="language-switcher">
+                        <button class="btn" onclick="toggleLanguage()">English</button>
+                    </div>
+                </nav>      
+            </div>
+        </section>
+       
+    </header>
+
+    <!-- banner section -->
+     <main>
+        <section id="main">
+            <div class="banner">
+               <img src="images/cov3.jpg" alt="">
+               <div class="banner-text">
+                <h1 data-en="Welcome to Fakah" data-ar="مرحبًا بك في فكه">Welcome to <span class="fakah">Fakah</span></h1>
+                <p data-en="Streamlining school and canteen operations" data-ar="تسهيل عمليات المدارس والمقاصف">Streamlining school and canteen operations</p>
+                <div>
+                    <button data-en="Contact Us" data-ar="تواصل معنا" class="btn2" type="button">Contact Us</button>
+                </div>
+               </div>
+               
+            
+               
+            </div>
+
+          
+
+        </section>
+     </main>
+   
+    
+
+
+   
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/child2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title" data-en="About Fakah" data-ar="عن فكه">About Fakah</h2>
+                    <p data-en="Fakah is a platform that simplifies school and canteen management." data-ar="فكه هو منصة لتبسيط إدارة المدارس والمقاصف.">Fakah is a platform that simplifies school and canteen management.</p>
+                </div>
+            </div>
+            
+        </div>
+       
+    </section>
+
+    <!-- Solutions Sections -->
+    <section id="solutions">
+        <div class="container">
+            <h2 class="sub-title" 
+            data-en="Our Solutions" data-ar="حلولنا" >
+                Our Solutions</h2>
+        </div>
+
+        <div class="services-list">
+
+
+            <div>
+
+                <i class="fa-solid fa-book"></i>
+                <h2 data-en="For Schools" data-ar="للمدارس" >For Schools</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eius harum laboriosam! Cum libero voluptas amet laborum nisi totam officiis modi eveniet accusantium animi saepe odit voluptatum, omnis debitis veritatis.</p>
+                <a href="#">Learn More </a>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-person"></i>
+                <h2 data-en="For Parents" data-ar="للآباء" >For Parents</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eius harum laboriosam! Cum libero voluptas amet laborum nisi totam officiis modi eveniet accusantium animi saepe odit voluptatum, omnis debitis veritatis.</p>
+                <a href="#">Learn More </a>
+
+            </div>
+            <div>
+
+                <i class="fa-solid fa-utensils"></i>
+                <h2 data-en="For Canteens" data-ar="للمقاصف"
+                >
+                    For Canteens</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eius harum laboriosam! Cum libero voluptas amet laborum nisi totam officiis modi eveniet accusantium animi saepe odit voluptatum, omnis debitis veritatis.</p>
+                <a href="#">Learn More </a>
+
+            </div>
+            
+          
+          
+
+
+        </div>
+        
+
+
+
+        
+        <div ></div>
+       
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faqs">
+        <h2 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة"
+        >
+            Frequently Asked Questions</h2>
+        <p data-en="Here you can find answers to common questions." data-ar="هنا يمكنك العثور على إجابات للأسئلة الشائعة.">Here you can find answers to common questions.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 data-en="Contact Us" data-ar="تواصل معنا"
+        >
+            Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" data-en="Your Name" data-ar="اسمك">
+            <input type="email" placeholder="Your Email" data-en="Your Email" data-ar="بريدك الإلكتروني">
+            <textarea placeholder="Your Message" data-en="Your Message" data-ar="رسالتك"></textarea>
+            <button type="submit" data-en="Submit" data-ar="إرسال">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p data-en="© 2024 Fakah. All Rights Reserved." data-ar="© 2024 فكه. جميع الحقوق محفوظة.">© 2024 Fakah. All Rights Reserved.</p>
+    </footer>
+
+    <!--  -->
+    <script src="script/script.js">
+
+    </script>
+</body>
+</html>
