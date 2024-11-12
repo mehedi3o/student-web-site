@@ -13,6 +13,13 @@
 
 
 
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
 
 
 /* body{
@@ -263,13 +270,14 @@ h1, h2 {
 }
 
 #contact input, #contact textarea, #contact button {
-    margin: 5px 0;
-    padding: 10px;
+    
     font-size: 1em;
+    border-radius: 10px;
+    box-shadow: 10px;
 }
 
 #contact button {
-    background: #007bff;
+    background: #ff004f;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -280,9 +288,9 @@ h1, h2 {
 }
 
 footer {
-    background: #333;
-    color: #fff;
-    padding: 10px;
+  
+    background: #EAE4DD;
+    padding: 25px;
     font-size: 0.8em;
 }
 
@@ -291,9 +299,164 @@ nav .fas{
 }
 
 
+/* faq-list */
+
+
+#faqs{
+    padding: 40px 0;
+}
+
+.feq-p{
+    font-size: 25px;
+    font-weight: 300;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 60px;
+ }
+ .work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+ }
+ .work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+ }
+
+ .layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s; 
+ }
+ .layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+ }
+ .layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+
+ }
+
+ .work:hover img{
+    transform: scale(1.1);
+
+ }
+ .work:hover .layer{
+    height: 100%;
+ }
+
+
+ /* contact information */
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 55%;
+}
+.contact-left p{
+    margin-top: 30px;
+    
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+    
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #0c0c0c;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+
+.con-sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color:#090909
+}
+
+
+
+.contact-right form{
+    width: 100%;
+    
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #fff;
+    padding: 15px;
+    margin: 10px ;
+    color: #080808;
+    font-size: 18px;
+  
+  
+
+}
+form .btn2{
+    padding: 8px 50px;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+
+.copyright p{
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+ 
+}
+
+
+
 
 
 /* responsive style */
+
 
 @media screen and (max-width: 576px) {
     .header{
@@ -343,12 +506,12 @@ nav .fas{
         padding: 40px;
         margin-top: 30px;
     }
-    .banner h1{
+    .banner-text h1{
         font-size: 30px;
         
     }
 
-    .banner p{
+    .banner-text p{
         font-size: 25px;
     }
     
@@ -380,3 +543,4 @@ nav .fas{
  
     
 }
+
