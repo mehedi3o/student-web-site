@@ -26,6 +26,19 @@ function switchLanguage(lang) {
 switchLanguage('en');
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // side menu
 
 

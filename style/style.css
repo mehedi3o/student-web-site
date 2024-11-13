@@ -70,7 +70,7 @@ nav img{
 
 .nav-links{
     flex: 1;
-    text-align: right;
+    text-align: center;
 }
 
 
@@ -340,7 +340,11 @@ h3{
  }
 
 .language-switcher {
+   
     position: fixed;
+    top: 7px;
+   right: 15px;
+   padding: 5px;
 
     
 }
