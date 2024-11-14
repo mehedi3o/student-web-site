@@ -45,6 +45,37 @@ switchLanguage('en');
 
 
 
+// content function
+// Function to animate the progress bars
+function animateProgressBars() {
+    const progressBars = document.querySelectorAll('.progress-bar .progress');
+    const progressSpans = document.querySelectorAll('.progress-bar span');
+
+    progressBars.forEach((bar, index) => {
+        const targetWidth = bar.style.width;
+        const targetPercentage = parseInt(targetWidth); // Get the percentage value from the inline style
+        let currentWidth = 0;
+
+        // Animate the progress bar
+        const interval = setInterval(() => {
+            if (currentWidth < targetPercentage) {
+                currentWidth++;
+                bar.style.width = currentWidth + '%'; // Update the width of the progress bar
+                progressSpans[index].textContent = currentWidth + '%'; // Update the span text to reflect the progress
+            } else {
+                clearInterval(interval);
+            }
+        }, 20); // Adjust the interval for the animation speed
+    });
+}
+
+// Add an event listener to trigger the progress animation on click
+document.querySelector('.cont-about').addEventListener('click', animateProgressBars);
+
+
+
+
+
 
 
 
