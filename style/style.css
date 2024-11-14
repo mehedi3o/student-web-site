@@ -298,6 +298,76 @@ h3{
 }
 
 
+
+/* faq about */
+/* .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+} */
+
+.fre-col{
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+}
+
+.fre-container{
+    padding: 20px;
+    margin-top: 80px;
+}
+.accordion {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+.accordion-item:last-child {
+    border-bottom: none;
+}
+.accordion-header {
+    background-color: #f7f7f7;
+    cursor: pointer;
+    padding: 15px;
+    font-weight: bold;
+}
+.accordion-body {
+    display: none;
+    padding: 15px;
+    background-color: #fff;
+    color: #333;
+    border-top: 1px solid #ddd;
+}
+.accordion-header.active + .accordion-body {
+    display: block;
+}
+/* Icon Styling */
+.accordion-header::after {
+    content: "+";
+    float: right;
+    font-weight: bold;
+}
+.accordion-header.active::after {
+    content: "-";
+}
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+
+
+
+/* faecilities */
+
+.fac-col{
+    text-align: center;
+}
 /* service-list */
 
 
